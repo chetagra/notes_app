@@ -76,8 +76,8 @@ app.get('/home',(req,res)=>{
 )
 
 
-
-app.listen(3335,()=>{
-    console.log('http://localhost:3335')
+const port= process.env.PORT || 3333
+app.listen(port,()=>{
+    console.log(`http://localhost:${port}`)
 })
 
